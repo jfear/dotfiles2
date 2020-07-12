@@ -110,3 +110,16 @@ if check_binary exa; then
     curl -SL $URL | zcat > ~/.local/bin/exa
     chmod a+x ~/.local/bin/exa
 fi
+
+# install direnv
+DIRENV_VERSION=
+if check_binary direnv; then
+    if [[ $OSTYPE == darwin* ]]; then
+	URL=https://github.com/direnv/direnv/releases/download/v2.21.3/direnv.darwin-amd64
+    else
+	URL=https://github.com/direnv/direnv/releases/download/v2.21.3/direnv.linux-amd64
+    fi
+    curl -SL $URL --output ~/.local/bin/direnv
+    chmod a+x ~/.local/bin/direnv
+fi
+
