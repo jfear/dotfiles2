@@ -2,14 +2,10 @@
 source ~/.shell/functions.sh
 
 # Allow local customizations in the ~/.shell_local_before file
-if [ -f ~/.shell_local_before ]; then
-    source ~/.shell_local_before
-fi
+[ -f ~/.shell_local_before ] && source ~/.shell_local_before
 
 # Allow local customizations in the ~/.bashrc_local_before file
-if [ -f ~/.bashrc_local_before ]; then
-    source ~/.bashrc_local_before
-fi
+[ -f ~/.bashrc_local_before ] && source ~/.bashrc_local_before
 
 # Settings
 source ~/.bash/settings.bash
@@ -30,11 +26,8 @@ source ~/.bash/plugins.bash
 source ~/.bash/prompt.bash
 
 # Allow local customizations in the ~/.shell_local_after file
-if [ -f ~/.shell_local_after ]; then
-    source ~/.shell_local_after
-fi
+[ -f ~/.shell_local_after ] && source ~/.shell_local_after
 
 # Allow local customizations in the ~/.bashrc_local_after file
-if [ -f ~/.bashrc_local_after ]; then
-    source ~/.bashrc_local_after
-fi
+[ -f ~/.bashrc_local_after ] && source ~/.bashrc_local_after
+
