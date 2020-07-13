@@ -3,6 +3,8 @@
       create: true
       relink: true
 
+- clean: ['~']
+
 - link:
     ~/.bash:
     ~/.bashrc:
@@ -15,4 +17,5 @@
     ~/.zshrc:
 
 - shell:
+  - git submodule update --init --recursive
   - ./bin/install_cli_tools.sh
