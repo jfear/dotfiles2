@@ -35,7 +35,7 @@ fi
 if check_binary autojump; then
     mkdir $SCRATCH_SPACE
     git clone git://github.com/wting/autojump.git $SCRATCH_SPACE
-    cd $SRATCH_SPACE && ./install.py -d ~/.local && cd -
+    cd $SCRATCH_SPACE && python install.py -d ~/.local && cd -
     rm -rf $SCRATCH_SPACE
 fi 
 
