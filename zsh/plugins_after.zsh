@@ -18,7 +18,7 @@ fi
 # Load direnv
 _direnv_hook() {
   trap -- '' SIGINT;
-  eval "$("/home/fearjm/.local/bin/direnv" export zsh)";
+  eval "$("$HOME/.local/bin/direnv" export zsh)";
   trap - SIGINT;
 }
 typeset -ag precmd_functions;
