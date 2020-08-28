@@ -29,7 +29,7 @@ extract_binary() {
 if [ ! -d ~/.fzf ]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --no-update-rc --completion --key-bindings
-fi 
+fi
 
 # Install autojump
 if check_binary autojump; then
@@ -37,7 +37,7 @@ if check_binary autojump; then
     git clone git://github.com/wting/autojump.git $SCRATCH_SPACE
     cd $SCRATCH_SPACE && python install.py -d ~/.local && cd -
     rm -rf $SCRATCH_SPACE
-fi 
+fi
 
 # Install ripgrep
 RG_VERSION=12.1.1
@@ -49,6 +49,19 @@ if check_binary rg; then
     fi
 
     extract_binary $URL rg
+fi
+
+# Install xsv
+XSV_VERSION=0.13.0
+if check_binary xsv; then
+    if [[ $OSTYPE == darwin* ]]; then
+        URL=https://github.com/BurntSushi/xsv/releases/download/$XSV_VERSION/xsv-$XSV_VERSION-x86_64-apple-darwin.tar.gz
+    else
+        URL=https://github.com/BurntSushi/xsv/releases/download/$XSV_VERSION/xsv-$XSV_VERSION-x86_64-unknown-linux-musl.tar.gz
+    fi
+
+    curl -SL $URL | tar -xz -C ~/.local/bin
+
 fi
 
 # Install fd-find
