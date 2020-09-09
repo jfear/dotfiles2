@@ -13,6 +13,7 @@
     ~/.condarc:
     ~/.tmux.conf:
     ~/.shell:
+    ~/.vimrc:
     ~/.zsh:
     ~/.zshrc:
 
