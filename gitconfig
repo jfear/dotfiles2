@@ -41,3 +41,5 @@
 [user]
     name = Justin Fear
     email = justin.m.fear@gmail.com
+[alias]
+	new = !git init && git symbolic-ref HEAD refs/heads/main
