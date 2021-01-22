@@ -29,3 +29,18 @@
 [submodule "dotbot_plugins/dotbot-rust"]
 	path = dotbot_plugins/dotbot-rust
 	url = https://github.com/alexcormier/dotbot-rust
+[submodule "tmux/plugins/tmux-resurrect"]
+	path = tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux/plugins/tmux-continuum"]
+	path = tmux/plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "tmux/plugins/tmux-pain-control"]
+	path = tmux/plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control
+[submodule "tmux/themes/tmux-themepack"]
+	path = tmux/themes/tmux-themepack
+	url = https://github.com/jimeh/tmux-themepack.git

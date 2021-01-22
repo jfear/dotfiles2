@@ -11,6 +11,7 @@
     ~/.bash_profile:
     ~/.gitconfig:
     ~/.condarc:
+    ~/.tmux:
     ~/.tmux.conf:
     ~/.shell:
     ~/.vimrc:
