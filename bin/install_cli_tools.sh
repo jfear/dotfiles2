@@ -125,14 +125,26 @@ if check_binary exa; then
 fi
 
 # install direnv
-DIRENV_VERSION=
+DIRENV_VERSION=2.21.3
 if check_binary direnv; then
     if [[ $OSTYPE == darwin* ]]; then
-	URL=https://github.com/direnv/direnv/releases/download/v2.21.3/direnv.darwin-amd64
+	URL=https://github.com/direnv/direnv/releases/download/v${DIRENV_VERSION}/direnv.darwin-amd64
     else
-	URL=https://github.com/direnv/direnv/releases/download/v2.21.3/direnv.linux-amd64
+	URL=https://github.com/direnv/direnv/releases/download/v{DIRENV_VERSION}/direnv.linux-amd64
     fi
     curl -SL $URL --output ~/.local/bin/direnv
     chmod a+x ~/.local/bin/direnv
+fi
+
+# install shfmt
+SHFMT_VERSION=3.1.2
+if check_binary shfmt; then
+    if [[ $OSTYPE == darwin* ]]; then
+	URL=https://github.com/mvdan/sh/releases/download/v${SHFMT_VERSION}/shfmt_v${SHFMT_VERSION}_darwin_amd64
+    else
+	URL=https://github.com/mvdan/sh/releases/download/v${SHFMT_VERSION}/shfmt_v${SHFMT_VERSION}_linux_amd64
+    fi
+    curl -SL $URL --output ~/.local/bin/shfmt
+    chmod a+x ~/.local/bin/shfmt
 fi
 
