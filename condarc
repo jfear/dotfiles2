@@ -2,7 +2,4 @@ channels:
   - conda-forge
   - bioconda
   - defaults
-  - lcdb
-  - jfear
-auto_update_conda: false
 anaconda_upload: true
