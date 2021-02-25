@@ -7,6 +7,7 @@ alias ll='ls -lh'
 alias la='ls -1'
 alias lle='ls -lhSr *.e.*'
 alias llo='ls -lhSr *.o.*'
+alias lt='ls -T -L'
 
 # Abbreviations
 alias l='clear'
