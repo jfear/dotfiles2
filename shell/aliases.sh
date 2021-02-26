@@ -4,6 +4,7 @@ alias grep='grep --color'
 
 # ls aliases
 alias ll='ls -lh'
+alias lll='ls -lh --time-style full-iso'
 alias la='ls -1'
 alias lle='ls -lhSr *.e.*'
 alias llo='ls -lhSr *.o.*'
