@@ -40,7 +40,7 @@
 
 [user]
     name = Justin Fear
-    email = justin.m.fear@gmail.com
+    email = 1240432+jfear@users.noreply.github.com
 [alias]
 	new = !git init && git symbolic-ref HEAD refs/heads/default
 [pull]
