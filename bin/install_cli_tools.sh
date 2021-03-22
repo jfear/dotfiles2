@@ -77,7 +77,7 @@ if check_binary fd; then
 fi
 
 # Install bat
-BAT_VERSION=0.15.4
+BAT_VERSION=0.18.0
 if check_binary bat; then
     if [[ $OSTYPE == darwin* ]]; then
         URL=https://github.com/sharkdp/bat/releases/download/v$BAT_VERSION/bat-v$BAT_VERSION-x86_64-apple-darwin.tar.gz
