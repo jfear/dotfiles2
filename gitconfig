@@ -1,7 +1,7 @@
 [core]
     autocrlf = input
     safecrlf = true
-    editor = nvim
+    editor = vim
     excludesFile = ~/.gitignore_global
 
 [color]
