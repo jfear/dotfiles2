@@ -38,10 +38,8 @@
 [url "https://bitbucket.org/"]
     insteadOf = bb:
 
-[user]
-    name = Justin Fear
-    email = 1240432+jfear@users.noreply.github.com
 [alias]
 	new = !git init && git symbolic-ref HEAD refs/heads/default
+
 [pull]
 	rebase = false
